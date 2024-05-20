@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Main Page</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<div class="main-container">
+  <h1>Welcome to the Conference App</h1>
+  <button id="createConferenceBtn">Create Conference</button>
+  <button id="joinConferenceBtn">Join Conference</button>
+</div>
+
+<div id="createConferenceModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Create Conference</h2>
+    <form id="createConferenceForm">
+      <label for="conferenceName">Conference Name:</label>
+      <input type="text" id="conferenceName" name="name" required>
+
+      <label for="constraints">Constraints:</label>
+      <select id="constraints" name="constraints" multiple>
+        <option value="audio">Audio</option>
+        <option value="video">Video</option>
+        <option value="chat">Chat</option>
+      </select>
+
+      <button type="submit">Create</button>
+    </form>
+  </div>
+</div>
+
+<script src="/js/index.js"></script>
+</body>
+</html>
